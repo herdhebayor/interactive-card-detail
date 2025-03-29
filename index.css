@@ -35,12 +35,12 @@ main{
 }
 .card{
     position: absolute;
-    width: 450px;
+    width: 500px;
     height: fit-content;
     top: 0;
     bottom: 0;
     margin: auto;
-    left: 15rem;
+    left: 20rem;
 }
 .card-front{
     width:400px;
@@ -107,7 +107,7 @@ main{
     background-color: transparent;
     padding: 20px;
     animation: fadeIn 1.5s ease;
-    margin-left: 17rem;
+    margin-left: 25rem;
 }
 .confirmation-page{
     line-height: 1.5;

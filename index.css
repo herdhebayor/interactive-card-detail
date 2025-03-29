@@ -44,18 +44,18 @@ main{
     left: 15rem;
 }
 .card-front{
-    width:350px;
-    height:200px;
+    width:400px;
+    height:250px;
     background-image:url("./images/bg-card-front.png");
-    border-radius:5px;
+    border-radius:8px;
     box-shadow: 0px 10px 20px 10px hsl(278, 68%, 11%,0.2);
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     flex-direction: column;
     padding: 20px 30px;
 }
 .card-number{
-    font-size: 2em;
+    font-size: 3em;
     color:hsl(0, 0%, 100%);
 }
 .holder-info{
@@ -65,14 +65,15 @@ main{
     text-transform: uppercase;
     color: hsl(0, 0%, 100%);
     margin-top: 10px;
+    font-size: 1.2rem;
 }
 .card-back{
-    width:350px;
+    width:400px;
     background-color: transparent;
     float: right;
-    height:200px;
+    height:250px;
     background-image:url("./images/bg-card-back.png");
-    border-radius:5px;
+    border-radius:8px;
     box-shadow: 5px 10px 30px 10px hsl(278, 68%, 11%,0.2);
     margin-top: 30px;
     padding: 20px;
@@ -81,10 +82,10 @@ main{
 .cvx-number{
     color: hsl(270, 3%, 87%);
     position: absolute;
-    top: 9rem;
-    left: 28rem;
+    top: 11rem;
+    left: 34rem;
     letter-spacing: 2px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 .section-two{
    height: 100%;
@@ -93,15 +94,6 @@ main{
    align-items: center;
    justify-content: center;
 }
-/* .h1{
-    font-size: 3em;
-    color:  hsl(0, 0%, 100%);
-    font-weight: 700;
-}
-h3{
-    font-size: 2em;
-    color:  hsl(0, 0%, 100%);
-} */
 .score-details{
    display: flex;
    width: 100%;
@@ -109,24 +101,14 @@ h3{
    justify-content: space-between;
    align-items: center;
 }
-.circle-svg{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-image: linear-gradient(hsl(234, 85%, 45%) 50%,hsl(241, 81%, 54%));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
 .form-container,
 .confirmation-page{
-    width: 350px;
+    width: 400px;
     height: fit-content;
     background-color: transparent;
     padding: 20px;
     animation: fadeIn 1.5s ease;
+    margin-left: 17rem;
 }
 .confirmation-page{
     line-height: 1.5;
@@ -261,22 +243,8 @@ label{
     
 }
 @media screen and (max-width:1100px) {
-    .section-one{
-        width: 280px;
-    }
     .card{
-        width: 380px;
-        left:7rem ;
-    }
-    .card-front,
-    .card-back{
-        width: 320px;
-    }
-    .form-container{
-        width: 300px;
-    }
-    .cvx-number{
-        left: 27rem;
+        left:7rem ; 
     }
 }
 @media screen and (max-width : 870px) {
@@ -291,14 +259,13 @@ label{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 250px;
+        height: 300px;
         width: 100%;
     }
     .section-two{
         width: 100%;
     }
     .card{
-        width: 450px;
         display: flex;
         flex-direction: column-reverse;
         top: 0;
@@ -307,33 +274,45 @@ label{
         margin: 0;
     }
     .card-back{
-        width: 350px;
-        height: 200px;
         align-self: flex-end;
         margin-top: 0;
     }
     .card-front{
-        width: 350px;
-        height: 200px;
-        margin-top: -86px;
+        margin-top: -110px;
         z-index: 100;
     }
     .form-container,
     .confirmation-page{
-        margin-top: 70px;
-        width: 350px;
+        margin-top: 120px;
+        margin-left: 0;
     }
 }
 @media screen and (max-width : 500px) {
+    .section-one{
+        height: 250px;
+    }
     .card{
         width: 370px;
+    }
+     .form-container,
+    .confirmation-page{
+        margin-top: 100px;
+        margin-left: 0;
     }
     .card-front,
     .card-back{
         width: 320px;
+        height: 200px;
     }
-    .form-container{
-        width: 300px;
+    .card-front{
+        margin-top: -86px;
+    }
+    .cvx-number{
+        left: 25rem;
+        top: 9rem;
+    }
+    .card-number{
+        font-size: 2rem;
     }
 }
 @media screen and (max-width : 375px) {

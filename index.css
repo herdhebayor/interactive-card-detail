@@ -13,7 +13,6 @@ body{
     width:100vw;
     height:100vh;
     margin:0;
-    overflow: hidden;
 }
 main{
     width:100%;
@@ -118,26 +117,25 @@ form{
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 .input-box{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: fit-content;
-    gap: 5px;
+    gap: 10px;
 }
 .input-box-date{
    display: flex;
    justify-content: space-between;
-   margin: 10px 0;
    align-items: center;
    gap: 20px;
    width: 100%;
 }
 input{
     width: 100%;
-    height: 40px;
+    height: 50px;
     border-radius: 5px;
     border:2px solid hsl(270, 3%, 87%);
     font-size: 1.2em;
@@ -154,6 +152,7 @@ input:focus, input:hover{
 }
 label{
     text-transform: uppercase;
+    font-size: 1.2rem;
 }
 
 .card-date{
@@ -175,7 +174,7 @@ label{
 }
 #month, #year{
     width: 70px;
-    height: 40px;
+    height: 50px;
 }
 .cvx-box{
    display: flex;
@@ -185,7 +184,7 @@ label{
 }
 #submit{
     width: 100%;
-    height: 40px;
+    height: 50px;
     text-align: center;
     background-color: hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
@@ -209,7 +208,7 @@ label{
     border-radius: 5px;
     background-color: hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
-    height: 40px;
+    height: 50px;
     font-size: 1.5em;
     margin-top: 10px;
     cursor: pointer;

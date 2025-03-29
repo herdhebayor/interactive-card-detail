@@ -1,0 +1,351 @@
+  @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Space+Grotesk:wght@500&family=Ubuntu:wght@300&display=swap');
+
+*{
+    box-sizing:border-box;
+    background-position:center;
+    background-size:cover;
+    font-family: 'Space Grotesk', sans-serif;
+}
+html{
+    font-size:10px;
+}
+body{
+    width:100vw;
+    height:100vh;
+    margin:0;
+    overflow: hidden;
+}
+main{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.container{
+    display: flex;
+    width:100%;
+    height:100%;
+}
+.section-one{
+    height:100%;
+    background-image:url("./images/bg-main-desktop.png");
+    position:relative;
+    width: 400px;
+    background-position:center;
+    background-size:cover;
+    position: relative;
+}
+.card{
+    position: absolute;
+    width: 450px;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 15rem;
+}
+.card-front{
+    width:350px;
+    height:200px;
+    background-image:url("./images/bg-card-front.png");
+    border-radius:5px;
+    box-shadow: 0px 10px 20px 10px hsl(278, 68%, 11%,0.2);
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+.card-number{
+    font-size: 2em;
+    color:hsl(0, 0%, 100%);
+}
+.holder-info{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    margin-top: 10px;
+}
+.card-back{
+    width:350px;
+    background-color: transparent;
+    float: right;
+    height:200px;
+    background-image:url("./images/bg-card-back.png");
+    border-radius:5px;
+    box-shadow: 5px 10px 30px 10px hsl(278, 68%, 11%,0.2);
+    margin-top: 30px;
+    padding: 20px;
+    position: relative;
+}
+.cvx-number{
+    color: hsl(270, 3%, 87%);
+    position: absolute;
+    top: 9rem;
+    left: 28rem;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+.section-two{
+   height: 100%;
+   width: 70%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+/* .h1{
+    font-size: 3em;
+    color:  hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+h3{
+    font-size: 2em;
+    color:  hsl(0, 0%, 100%);
+} */
+.score-details{
+   display: flex;
+   width: 100%;
+   height: 50px;
+   justify-content: space-between;
+   align-items: center;
+}
+.circle-svg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsl(234, 85%, 45%) 50%,hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.form-container,
+.confirmation-page{
+    width: 350px;
+    height: fit-content;
+    background-color: transparent;
+    padding: 20px;
+    animation: fadeIn 1.5s ease;
+}
+.confirmation-page{
+    line-height: 1.5;
+}
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 5px;
+}
+.input-box-date{
+   display: flex;
+   justify-content: space-between;
+   margin: 10px 0;
+   align-items: center;
+   gap: 20px;
+   width: 100%;
+}
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border:2px solid hsl(270, 3%, 87%);
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 10px;
+    outline: none;
+}
+input:focus, input:hover{
+    outline:none;
+    border-color:hsl(278, 68%, 11%);
+}
+.inputError{
+   border: 2px solid red;
+}
+label{
+    text-transform: uppercase;
+}
+
+.card-date{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.card-expiry-date div{
+    display: flex;
+    gap: 10px;
+}
+.errorMsg{
+    font-size: .8em;
+    color: red;
+}
+.invalid{
+    border-color: red;
+}
+#month, #year{
+    width: 70px;
+    height: 40px;
+}
+.cvx-box{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+    width: 50%;
+}
+#submit{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header{
+    font-size: 3em;
+    font-weight: 500;
+    color: hsl(278, 68%, 11%);
+}
+.message{
+    font-size: 1.5em;
+    color: hsl(241, 100%, 89%);
+}
+.reset-btn{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    height: 40px;
+    font-size: 1.5em;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.reset-btn:hover, #submit:hover{
+    background-color:hsl(278, 68%, 20%) ;
+}
+.confirmation-page div{
+    text-align: center;
+    margin-top: 5px;
+}
+.confirmation-page{
+    display: none;
+}
+.attribution {
+	font-size: 11px;
+    width: 100%; 
+	text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    25%{opacity: .3;}
+    50%{opacity:.6}
+    75%{opacity:.8}
+    100%{opacity: 1;}
+    
+}
+@media screen and (max-width:1100px) {
+    .section-one{
+        width: 280px;
+    }
+    .card{
+        width: 380px;
+        left:7rem ;
+    }
+    .card-front,
+    .card-back{
+        width: 320px;
+    }
+    .form-container{
+        width: 300px;
+    }
+    .cvx-number{
+        left: 27rem;
+    }
+}
+@media screen and (max-width : 870px) {
+    body{
+        height: 100%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .section-one{
+        background-image:url("./images/bg-main-mobile.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 250px;
+        width: 100%;
+    }
+    .section-two{
+        width: 100%;
+    }
+    .card{
+        width: 450px;
+        display: flex;
+        flex-direction: column-reverse;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin: 0;
+    }
+    .card-back{
+        width: 350px;
+        height: 200px;
+        align-self: flex-end;
+        margin-top: 0;
+    }
+    .card-front{
+        width: 350px;
+        height: 200px;
+        margin-top: -86px;
+        z-index: 100;
+    }
+    .form-container,
+    .confirmation-page{
+        margin-top: 70px;
+        width: 350px;
+    }
+}
+@media screen and (max-width : 500px) {
+    .card{
+        width: 370px;
+    }
+    .card-front,
+    .card-back{
+        width: 320px;
+    }
+    .form-container{
+        width: 300px;
+    }
+}
+@media screen and (max-width : 375px) {
+    .card{
+        width: 330px;
+    }
+    .card-front,
+    .card-back{
+        width: 300px;
+    }
+    .cvx-number{
+        left: 25rem;
+    }
+}
+

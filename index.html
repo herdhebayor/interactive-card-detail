@@ -1,0 +1,130 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="index.css" />
+		<title>Frontend Mentor | Interactive card details form</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<div class="section-one">
+					<div class="card">
+						<div class="card-front">
+						<div class="card-logo">
+							<img src="./images/card-logo.svg" alt="card-logo">
+						</div>
+						<div class="front-card-details">
+							<div class="card-number">0000 0000 0000 0000</div>
+							<div class="holder-info">
+								<div class="holder-name">Jane Appleseed</div>
+								<div class="card-expiry-date"><span class="mo">00</span>/<span class="yr">00</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="card-back">
+						<div class="cvx-number">000</div>
+					</div>
+					</div>
+				</div>
+				<div class="section-two">
+					<div class="form-container">
+						<form name="myForm">
+							<div class="input-box">
+								<label for="name">Card holder's name</label>
+								<input
+									type="text"
+									name="name"
+									id="name"
+									placeholder="e.g. Jane Appleseed"
+									required
+								/>
+							</div>
+							<div class="input-box">
+								<label for="card-num">Card Number</label>
+								<input
+									type="tel"
+									name="card-num"
+									id="card-num"
+									placeholder="e.g1234 5678 9000"
+									maxlength="16"
+									required
+								/>
+							</div>
+							<div class="input-box-date">
+								<div class="card-date">
+									<label for="expiry-date">Exp. date(mm/yy)</label>
+									<div class="card-expiry-date">
+										<div>
+											<input type="tel" placeholder="MM" id="month" name="expiry-date" class="expiry-val" maxlength="2" required/>
+											<input type="tel" placeholder="YY" id="year" name="expiry-date" class="expiry-val" maxlength="2" required />
+										</div>
+									</div>
+								</div>
+								<div class="cvx-box">
+									<label for="cvx">cvx</label>
+									<input type="number" class="cvx-num" id="cvx-num" name="cvx" placeholder="e.g.123" maxlength="3" required/>
+								</div>
+							</div>
+							<button type="submit" id="submit">confirm</button>
+						</form>
+					</div>
+					<div class="confirmation-page">
+						<div class="wrapper">
+							<div class="icon-confirmed">
+							<svg
+								width="80"
+								height="80"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<circle cx="40" cy="40" r="40" fill="url(#a)" />
+								<path
+									d="M28 39.92 36.08 48l16-16"
+									stroke="#fff"
+									stroke-width="3"
+								/>
+								<defs>
+									<linearGradient
+										id="a"
+										x1="-23.014"
+										y1="11.507"
+										x2="0"
+										y2="91.507"
+										gradientUnits="userSpaceOnUse"
+									>
+										<stop stop-color="#6348FE" />
+										<stop offset="1" stop-color="#610595" />
+									</linearGradient>
+								</defs>
+							</svg>
+						</div>
+						<div class="header">Thank you!</div>
+						<div class="message">we've added your card details</div>
+						<button class="reset-btn" id="reset">continue</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a>. Coded by <a href="">Adebayo sikiru temitope</a>.
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

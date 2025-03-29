@@ -135,7 +135,7 @@ form{
 }
 input{
     width: 100%;
-    height: 50px;
+    height: 60px;
     border-radius: 5px;
     border:2px solid hsl(270, 3%, 87%);
     font-size: 1.2em;
@@ -174,7 +174,6 @@ label{
 }
 #month, #year{
     width: 70px;
-    height: 50px;
 }
 .cvx-box{
    display: flex;
@@ -184,7 +183,7 @@ label{
 }
 #submit{
     width: 100%;
-    height: 50px;
+    height: 60px;
     text-align: center;
     background-color: hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
@@ -208,7 +207,7 @@ label{
     border-radius: 5px;
     background-color: hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
-    height: 50px;
+    height: 60px;
     font-size: 1.5em;
     margin-top: 10px;
     cursor: pointer;
